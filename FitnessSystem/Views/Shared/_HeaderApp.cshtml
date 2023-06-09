@@ -1,0 +1,42 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a asp-action="Index" asp-controller="Home" class="logo mr-auto nav-link scrollto active">
+            <img src="~/assets/images/unnamed.png" alt=""><em style="color: #ed563b;font-style: normal; padding:1px 1px 1px 5px">Fitness</em>
+        </a>
+       
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto" asp-action="Index" asp-controller="Home">Home</a></li>
+                <li><a class="nav-link scrollto" asp-action="About" asp-controller="Home">About</a></li>
+                <li><a class="nav-link scrollto" asp-action="Services" asp-controller="Home">Classes</a></li>
+                <li><a class="nav-link scrollto " asp-action="Contact" asp-controller="Home">Contact Us</a></li>
+                <li><a class="nav-link scrollto" asp-action="Team" asp-controller="Home">Team</a></li>
+                <li></li>
+                <li class="dropdown ">
+                    <a  href="#"><span>Member</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li >
+                            <a asp-action="Feedback" asp-controller="Member">Feedback </a>
+                        </li>
+                       
+
+                    </ul>
+                </li>
+               
+
+               
+            </ul>
+            @Html.Partial("_LoginPartial")
+
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->

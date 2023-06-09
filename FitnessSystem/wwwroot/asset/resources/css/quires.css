@@ -1,0 +1,551 @@
+/*Big tablet to 1200px (widths smaller that the 1140px row)*/
+@media only screen and (max-width: 1200px) {
+    .beast-text-box {
+        width: 100%;
+        top: 50%;
+    }
+
+}
+
+/*small tablet to big tablet from: 769px to 1023px*/
+@media only screen and (max-width: 1023px) {
+    .beast-text-box {
+        top: 45%;
+
+    }
+
+    .heading-h1 {
+        font-size: 230%;
+    }
+
+    .beast-text-box .btn-full:link,
+    .beast-text-box .btn-full:visited {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+    .beast-text-box {
+        top: 20%;
+
+    }
+}
+
+
+
+/*small phone to small tablets from: 481px to 769px*/
+@media only screen and (max-width: 769px) {
+
+    .heading-h1 {
+        font-size: 180%;
+    }
+
+    .beast-text-box .btn-full:link,
+    .beast-text-box .btn-full:visited {
+        font-size: 90%;
+    }
+
+    .icon-big {
+        padding-left: 225px;
+    }
+
+    .beast-text-box {
+        top: 32%;
+
+    }
+}
+
+@media only screen and (max-width: 560px) {
+
+    .beast-text-box {
+        top: 22%;
+    }
+
+}
+
+/*Small phone from: 0 to 480px*/
+
+@media only screen and (max-width: 481px) {
+
+    .beast-text-box {
+        top: 20%;
+    }
+
+    .heading-h1 {
+        font-size: 140%;
+    }
+
+    .beast-text-box .btn-full:link,
+    .beast-text-box .btn-full:visited {
+        font-size: 70%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .beast-text-box {
+        top: 18%;
+    }
+
+    .heading-h1 {
+        font-size: 100%;
+    }
+
+    .beast-text-box .btn-full:link,
+    .beast-text-box .btn-full:visited {
+        font-size: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .beast-text-box {
+        top: 16%;
+    }
+
+}
+
+@media only screen and (max-width: 337px) {
+
+    .beast-text-box {
+        top: 15%;
+    }
+
+}
+
+/*-------------------------------------*/
+
+@media only screen and (max-width: 1199px) {
+
+    section {
+        padding: 40px 0;
+    }
+
+    .icon-big {
+        padding-left: 80px;
+    }
+
+    .plan-price-mem {
+        font-size: 79%;
+    }
+
+    .hot-news-title-div {
+        left: -10px;
+
+    }
+
+    .box-share-news h5 {
+        font-size: 100%;
+    }
+
+}
+
+/*-------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+
+    .icon-big {
+        padding-left: 135px;
+    }
+
+    .plan-price {
+        font-size: 275%;
+
+    }
+
+    .hot-news-title-div {
+        left: -5px;
+
+    }
+
+    .footer-ul-time-sch li span:first-child {
+        font-size: 70%;
+
+    }
+
+    .footer-ul-time-sch li span:last-child {
+
+        font-size: 70%;
+
+    }
+
+    .newsletter-email input[type="email"]::-webkit-input-placeholder {
+        font-size: 55%;
+
+    }
+
+    .social-ul li a i {
+        font-size: 160%;
+
+    }
+
+    .social-ul li a {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .box-facilities-text p {
+        margin-left: 30px;
+    }
+
+    .footer-ul-social li .ion-logo-facebook,
+    .footer-ul-social li .ion-logo-twitter,
+    .footer-ul-social li .ion-logo-googleplus,
+    .footer-ul-social li .ion-logo-instagram {
+        font-size: 195%;
+        margin-right: 0px;
+    }
+
+    .box-share-news div div:first-child {
+        padding-top: 30px;
+    }
+    .box-share-news div div:last-child {
+        padding-top: 15px;
+
+    }
+
+    .box-share-news h5 {
+        font-size: 80%;
+    }
+    .social-ul-share li a i {
+        font-size: 150%;
+    }
+}
+
+/*-------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+
+    section {
+        padding: 30px 0;
+    }
+
+    .heading-h2 {
+        font-size: 136%;
+    }
+
+    .icon-big {
+        padding-left: 225px;
+        font-size: 300%;
+    }
+
+    .long-copy {
+        font-size: 95%;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .heading-h3 {
+        font-size: 105%;
+    }
+
+    .short-copy {
+        font-size: 85%;
+
+    }
+
+    .box-class,
+    .box-mem,
+    .box-news {
+        margin-bottom: 20px;
+    }
+
+    .plan-price-mem {
+        font-size: 90%;
+    }
+
+    .hot-news-title-div {
+        left: -65px;
+
+    }
+
+    .footer-ul-time-sch li span:first-child {
+        font-size: 80%;
+
+    }
+
+    .footer-ul-time-sch li span:last-child {
+
+        font-size: 80%;
+
+    }
+
+    .newsletter-email input[type="email"]::-webkit-input-placeholder {
+        font-size: 75%;
+
+    }
+
+    .social-ul li a i {
+        font-size: 160%;
+
+    }
+
+    .social-ul li a {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .box-trainer-details h6 {
+        margin-top: 20px;
+    }
+
+    .heading-h5-history {
+        margin-top: 20px;
+    }
+
+    .history-desc {
+        font-size: 95%;
+    }
+
+    .box-facilities-text p {
+        margin-left: 20px;
+    }
+
+    .footer-ul-social li .ion-logo-facebook,
+    .footer-ul-social li .ion-logo-twitter,
+    .footer-ul-social li .ion-logo-googleplus,
+    .footer-ul-social li .ion-logo-instagram {
+        font-size: 200%;
+        margin-right: 10px;
+    }
+
+    .blog-title-short-desc p {
+        font-size: 80%;
+
+    }
+
+    .img-choose-us {
+        margin-top: 20px;
+    }
+
+}
+
+/*-------------------------------------*/
+
+@media only screen and (max-width: 575px) {
+
+    .icon-big {
+        padding-left: 240px;
+
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .icon-big {
+        padding-left: 230px;
+
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    .icon-big {
+        padding-left: 220px;
+
+    }
+
+}
+
+@media only screen and (max-width: 510px) {
+
+    .icon-big {
+        padding-left: 215px;
+
+    }
+
+    .hot-news-title-div {
+        left: -60px;
+
+    }
+}
+
+@media only screen and (max-width: 490px) {
+
+    .icon-big {
+        padding-left: 205px;
+
+    }
+
+    .hot-news-title-div {
+        left: -55px;
+
+    }
+}
+
+
+@media only screen and (max-width: 470px) {
+
+    .icon-big {
+        padding-left: 195px;
+
+    }
+    .box-share-news h5 {
+        font-size: 70%;
+    }
+    .social-ul-share li a i {
+        font-size: 130%;
+    }
+    .box-share-news div div:last-child {
+        padding-top: 20px;
+
+    }
+
+}
+
+@media only screen and (max-width: 455px) {
+
+    .icon-big {
+        padding-left: 188px;
+
+    }
+
+    .hot-news-title-div {
+        left: -50px;
+
+    }
+
+    .class-title-short-desc p {
+        font-size: 80%;
+
+    }
+    .ul-benefits li,
+    .ul-times li{
+        font-size: 80%;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 436px) {
+
+    .icon-big {
+        padding-left: 177px;
+
+    }
+
+}
+
+@media only screen and (max-width: 416px) {
+
+    .icon-big {
+        padding-left: 165px;
+
+    }
+
+    .hot-news-title-div {
+        left: -40px;
+
+    }
+
+    .box-facilities-text p {
+        margin-left: 30px;
+    }
+
+    .box-share-news h5 {
+        font-size: 65%;
+    }
+
+    .box-share-news div div:last-child {
+        padding-top: 15px;
+
+    }
+    .box-share-news div div:first-child {
+        padding-top: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 391px) {
+
+    .icon-big {
+        padding-left: 152px;
+
+    }
+
+    .box-share-news h5 {
+        font-size: 60%;
+    }
+    .social-ul-share li a i {
+        font-size: 120%;
+    }
+    .box-share-news div div:last-child {
+        padding-top: 18px;
+
+    }
+    .box-share-news div div:first-child {
+        padding-top: 28px;
+    }
+
+}
+
+@media only screen and (max-width: 371px) {
+
+    .icon-big {
+        padding-left: 142px;
+
+    }
+
+    .hot-news-title-div {
+        left: -30px;
+
+    }
+
+    .box-share-news h5 {
+        font-size: 55%;
+    }
+    .social-ul-share li a i {
+        font-size: 110%;
+    }
+
+
+}
+
+@media only screen and (max-width: 359px) {
+
+    .box-facilities-text p {
+        margin-left: 0px;
+        top: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 351px) {
+
+    .icon-big {
+        padding-left: 132px;
+
+    }
+
+}
+
+@media only screen and (max-width: 335px) {
+
+    .icon-big {
+        padding-left: 125px;
+
+    }
+
+    .box-share-news h5 {
+        font-size: 50%;
+    }
+    .social-ul-share li a i {
+        font-size: 100%;
+    }
+    .box-share-news div div:last-child {
+        padding-top: 10px;
+
+    }
+    .box-share-news div div:first-child {
+        padding-top: 20px;
+    }
+
+}

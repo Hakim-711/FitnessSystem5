@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewData["Title"] = "Team";
+    Layout = "/Views/Shared/_LayoutInnerPages.cshtml";
+}
+<section class="section" id="trainers">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2>Expert <em>Trainers</em></h2>
+                    <img src="~/assets/images/line-dec.png" alt="">
+                    <p>Meet our team of expert trainers who are dedicated to helping you achieve your fitness goals.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="~/assets/images/first-trainer.jpg" alt="">
+                    </div>
+                    <div class="down-content">
+                        <span>Strength Trainer</span>
+                        <h4>Bret D. Bowers</h4>
+                        <p>Bret has a passion for helping people achieve their strength training goals. He has a wealth of knowledge and experience in the field of strength training.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="~/assets/images/second-trainer.jpg" alt="">
+                    </div>
+                    <div class="down-content">
+                        <span>Muscle Trainer</span>
+                        <h4>Hector T. Daigl</h4>
+                        <p>Hector is a muscle training expert. He has helped countless people build the muscles they've always wanted. He is dedicated and knowledgeable in his field.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="trainer-item">
+                    <div class="image-thumb">
+                        <img src="~/assets/images/third-trainer.jpg" alt="">
+                    </div>
+                    <div class="down-content">
+                        <span>Power Trainer</span>
+                        <h4>Paul D. Newman</h4>
+                        <p>Paul is a power training specialist. He has helped many individuals improve their power, speed, and explosiveness. He is dedicated to his clients and their success.</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a asp-action="RegisterFormTrainer" asp-controller="Member" class="btn btn-primary" style="margin-left: 45%;margin-top: 5%;border-bottom-width: 5%;">Become a Trainer</a>
+
+    </div>
+</section>
+<!-- ***** Trainers Section Ends ***** -->

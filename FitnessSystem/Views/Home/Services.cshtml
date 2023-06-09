@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Services";
+    Layout = "/Views/Shared/_LayoutInnerPages.cshtml";
+
+}
+<!-- ***** Our Classes Start ***** -->
+<section class="section" id="our-classes">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2>Our <em>Classes</em></h2>
+                    <img src="assets/images/line-dec.png" alt="">
+                    <p>Welcome to our fitness classes! Explore our wide range of classes and find the perfect fit for your workout routine.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="tabs">
+            <div class="col-lg-4">
+                <ul>
+                    <li><a href='#tabs-1'><img src="~/assets/images/tabs-first-icon.png" alt="">First Training Class</a></li>
+                    <li><a href='#tabs-2'><img src="~/assets/images/tabs-first-icon.png" alt="">Second Training Class</a></a></li>
+                    <li><a href='#tabs-3'><img src="~/assets/images/tabs-first-icon.png" alt="">Third Training Class</a></a></li>
+                    <li><a href='#tabs-4'><img src="~/assets/images/tabs-first-icon.png" alt="">Fourth Training Class</a></a></li>
+                    <div class="main-rounded-button"><a asp-action="Schedule" asp-controller="Home">View All Schedules</a></div>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <section class='tabs-content'>
+                    <article id='tabs-1'>
+                        <img src="~/assets/images/training-image-01.jpg" alt="First Class">
+                        <h4>First Training Class</h4>
+                        <p>This class focuses on strength training and conditioning, using a variety of equipment and exercises to help you achieve your fitness goals.</p>
+                        <div class="main-button">
+                            <a href="#">View Schedule</a>
+                        </div>
+                    </article>
+                    <article id='tabs-2'>
+                        <img src="~/assets/images/training-image-02.jpg" alt="Second Training">
+                        <h4>Second Training Class</h4>
+                        <p>Our second training class offers a mix of cardio and resistance exercises, designed to help you burn calories and build muscle in a fun and challenging workout.</p>
+                        <div class="main-button">
+                            <a href="#">View Schedule</a>
+                        </div>
+                    </article>
+                    <article id='tabs-3'>
+                        <img src="~/assets/images/training-image-03.jpg" alt="Third Class">
+                        <h4>Third Training Class</h4>
+                        <p>Experience high-intensity interval training in our third class, combining short bursts of intense exercise with periods of rest to maximize your workout efficiency.</p>
+                        <div class="main-button">
+                            <a href="#">View Schedule</a>
+                        </div>
+                    </article>
+                    <article id='tabs-4'>
+                        <img src="~/assets/images/training-image-04.jpg" alt="Fourth Training">
+                        <h4>Fourth Training Class</h4>
+                        
+                        <p>Our fourth training class focuses on flexibility and balance, incorporating elements of yoga, pilates, and stretching exercises to help you improve your overall fitness and well-being.</p>
+                        <div class="main-button">
+                            <a href="#">View Schedule</a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Our Classes End ***** -->

@@ -1,0 +1,61 @@
+﻿@using FitnessSystem.Models
+@model RegisterFormTrainer
+@{
+    ViewData["Title"] = "Trainer Registration";
+    Layout = "~/Views/Shared/_LayoutInnerPages.cshtml";
+}
+
+<!-- Add the necessary CSS and JavaScript references -->
+
+<section class="section-reg-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="heading-h2">Become a Trainer</h2>
+            </div>
+            <div class="col-sm-9 mx-auto">
+                <div class="card">
+                    <div class="card-body form-box">
+                        @using (Html.BeginForm("Success", "Member", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Name, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.Name, new { @class = "form-control form-control-sm", placeholder = "Enter Name" })
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.PhoneNumber, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control form-control-sm", placeholder = "Phone Number" })
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Experience, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.Experience, new { @class = "form-control form-control-sm", placeholder = "Experience" })
+                                <span asp-validation-for="Experience" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.TrainerType, new { @class = "col-form-label-sm" })
+                                @Html.DropDownListFor(m => m.TrainerType, new SelectList(new[] { new { Text = "Muscle", Value = "Muscle" }, new { Text = "Power", Value = "Power" }, new { Text = "Strength", Value = "Strength" }, new { Text = "Yoga", Value = "Yoga" }, new { Text = "Weight Loss", Value = "Weight Loss" } }, "Value", "Text"), "Select Trainer Type", new { @class = "form-control form-control-sm" })
+                                <span asp-validation-for="TrainerType" class="text-danger"></span>
+                            </div>
+
+                            <!-- Add the remaining form fields using the same pattern -->
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                <button type="submit" class=" main-button btn btn-block n" name="btn" value="submit">
+                                    <span>Submit</span>
+                                </button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,227 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+}
+
+
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@section Feature{
+    <!-- ***** Features Item Start ***** -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Choose <em>Program</em></h2>
+                        <img src="~/assets/images/line-dec.png" alt="waves">
+                        <p>Fitness Club : A dedicated facility that offers a wide range of exercise equipment, group classes, and personalized training services to cater to individuals with diverse fitness goals and preferences. Fitness clubs aim to create a supportive and motivating environment, promoting a healthy lifestyle and fostering a sense of community among members.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="~/assets/images/features-first-icon.png" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>Basic Fitness</h4>
+                                <p>A comprehensive approach to improving overall health and well-being through a combination of physical activity, proper nutrition, and adequate rest. This holistic approach emphasizes the importance of regular exercise, a balanced diet, and sufficient sleep to enhance one's energy levels, boost the immune system, and maintain a healthy weight.</p>
+                                <a href="#" class="text-button">Discover More</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="~/assets/images/features-first-icon.png" alt="second one">
+                            </div>
+                            <div class="right-content">
+                                <h4>New Gym Training</h4>
+                                <p>A modern and innovative approach to physical fitness that incorporates a diverse range of exercises, equipment, and training techniques to cater to individuals of all ages and fitness levels.</p>
+                                <a href="#" class="text-button">Discover More</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="~/assets/images/features-first-icon.png" alt="third gym training">
+                            </div>
+                            <div class="right-content">
+                                <h4>Basic Muscle Course</h4>
+                                <p>Throughout the course, participants will be guided on how to create a balanced workout routine, incorporating principles of progressive overload, rest, and recovery.</p>
+                                <a href="#" class="text-button">Discover More</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="~/assets/images/features-first-icon.png" alt="fourth muscle">
+                            </div>
+                            <div class="right-content">
+                                <h4>Advanced Muscle Course</h4>
+                                <p>Throughout the program, participants will explore a wide range of exercises, including complex compound and isolation movements, as well as advanced training techniques like drop sets, supersets, and cluster sets.</p>
+                                <a href="#" class="text-button">Discover More</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="~/assets/images/features-first-icon.png" alt="training fifth">
+                            </div>
+                            <div class="right-content">
+                                <h4>Yoga Training</h4>
+                                <p>Throughout a yoga training program, participants will be guided through a series of asanas designed to improve body awareness, increase range of motion, and build muscular endurance. They will also learn essential pranayama techniques to control and deepen their breath, helping to calm the mind and improve concentration. Meditation and relaxation techniques will be integrated into the practice, enabling participants to cultivate mindfulness and foster a greater sense of inner peace.</p>
+                                <a href="#" class="text-button">Discover More</a>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="~/assets/images/features-first-icon.png" alt="gym training">
+                            </div>
+                            <div class="right-content">
+                                <h4>Body Building Course</h4>
+                                <p>Throughout the bodybuilding course, participants will be guided through a series of resistance training exercises, focusing on both compound and isolation movements to maximize muscle hypertrophy. The program will cover proper exercise techniques, form, and execution to ensure safety and effectiveness, while also addressing the importance of training variables such as volume, intensity, and frequency.</p>
+                                <a href="#" class="text-button">Discover More</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Item End ***** -->
+         }
+
+@section classe{
+    <!-- ***** Our Classes Start ***** -->
+    <section class="section" id="our-classes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Our <em>Classes</em></h2>
+                        <img src="assets/images/line-dec.png" alt="">
+                        <p>Welcome to our fitness classes! Explore our wide range of classes and find the perfect fit for your workout routine.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="tabs">
+                <div class="col-lg-4">
+                    <ul>
+                        <li><a href='#tabs-1'><img src="~/assets/images/tabs-first-icon.png" alt="">First Training Class</a></li>
+                        <li><a href='#tabs-2'><img src="~/assets/images/tabs-first-icon.png" alt="">Second Training Class</a></a></li>
+                        <li><a href='#tabs-3'><img src="~/assets/images/tabs-first-icon.png" alt="">Third Training Class</a></a></li>
+                        <li><a href='#tabs-4'><img src="~/assets/images/tabs-first-icon.png" alt="">Fourth Training Class</a></a></li>
+                        <div class="main-rounded-button"><a href="#">View All Schedules</a></div>
+                    </ul>
+                </div>
+                <div class="col-lg-8">
+                    <section class='tabs-content'>
+                        <article id='tabs-1'>
+                            <img src="~/assets/images/training-image-01.jpg" alt="First Class">
+                            <h4>First Training Class</h4>
+                            <p>This class focuses on strength training and conditioning, using a variety of equipment and exercises to help you achieve your fitness goals.</p>
+                            <div class="main-button">
+                                <a href="#">View Schedule</a>
+                            </div>
+                        </article>
+                        <article id='tabs-2'>
+                            <img src="~/assets/images/training-image-02.jpg" alt="Second Training">
+                            <h4>Second Training Class</h4>
+                            <p>Our second training class offers a mix of cardio and resistance exercises, designed to help you burn calories and build muscle in a fun and challenging workout.</p>
+                            <div class="main-button">
+                                <a href="#">View Schedule</a>
+                            </div>
+                        </article>
+                        <article id='tabs-3'>
+                            <img src="~/assets/images/training-image-03.jpg" alt="Third Class">
+                            <h4>Third Training Class</h4>
+                            <p>Experience high-intensity interval training in our third class, combining short bursts of intense exercise with periods of rest to maximize your workout efficiency.</p>
+                            <div class="main-button">
+                                <a href="#">View Schedule</a>
+                            </div>
+                        </article>
+                        <article id='tabs-4'>
+                            <img src="~/assets/images/training-image-04.jpg" alt="Fourth Training">
+                            <h4>Fourth Training Class</h4>
+
+                            <p>Our fourth training class focuses on flexibility and balance, incorporating elements of yoga, pilates, and stretching exercises to help you improve your overall fitness and well-being.</p>
+                            <div class="main-button">
+                                <a href="#">View Schedule</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Our Classes End ***** -->
+         }
+@section MiddleSection{
+    <section class="section" id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading dark-bg">
+                        <h2>Classes <em>Schedule</em></h2>
+                        <img src="assets/images/line-dec.png" alt="">
+                        <p>Welcome to Schedule , Here is the avaliable time to train.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="filters">
+                        <ul class="schedule-filter">
+                            <li class="active" data-tsfilter="monday">Monday</li>
+                            <li data-tsfilter="tuesday">Tuesday</li>
+                            <li data-tsfilter="wednesday">Wednesday</li>
+                            <li data-tsfilter="thursday">Thursday</li>
+                            <li data-tsfilter="friday">Friday</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="schedule-table filtering">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="day-time">Fitness Class</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">10:00AM - 11:30AM</td>
+                                    <td class="tuesday ts-item" data-tsmeta="tuesday">2:00PM - 3:30PM</td>
+                                    <td>William G. Stewart</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-time">Muscle Training</td>
+                                    <td class="friday ts-item" data-tsmeta="friday">10:00AM - 11:30AM</td>
+                                    <td class="thursday friday ts-item" data-tsmeta="thursday" data-tsmeta="friday">2:00PM - 3:30PM</td>
+                                    <td>Paul D. Newman</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-time">Body Building</td>
+                                    <td class="tuesday ts-item" data-tsmeta="tuesday">10:00AM - 11:30AM</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">2:00PM - 3:30PM</td>
+                                    <td>Boyd C. Harris</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-time">Yoga Training Class</td>
+                                    <td class="wednesday ts-item" data-tsmeta="wednesday">10:00AM - 11:30AM</td>
+                                    <td class="friday ts-item" data-tsmeta="friday">2:00PM - 3:30PM</td>
+                                    <td>Hector T. Daigle</td>
+                                </tr>
+                                <tr>
+                                    <td class="day-time">Advanced Training</td>
+                                    <td class="thursday ts-item" data-tsmeta="thursday">10:00AM - 11:30AM</td>
+                                    <td class="wednesday ts-item" data-tsmeta="wednesday">2:00PM - 3:30PM</td>
+                                    <td>Bret D. Bowers</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}   

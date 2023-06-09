@@ -1,0 +1,129 @@
+﻿<footer class="section-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <h6 class="heading-h6-footer">COME FIND US</h6>
+                <ul class="footer-ul">
+                    <li>
+                        <i class="icon ion-ios-search icon-small"></i><span>87,Amman </span>
+                    </li>
+
+                    <li>
+                        <i class="icon ion-ios-phone-portrait icon-small"></i><span>0780812373</span>
+                    </li>
+
+                    <li>
+                        <i class="icon ion-ios-mail icon-small"></i><span>xyz@gym.com</span>
+                    </li>
+
+
+                    <li>
+                        <i class="icon ion-ios-globe icon-small"></i><span>xyz.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <h6 class="heading-h6-footer">HOT NEWS</h6>
+
+                <div class="row">
+                    <div class="col-sm-2 col-2 hot-news-icon-div">
+                        <i class="icon ion-ios-bonfire icon-small"></i>
+                    </div>
+
+                    <div class="col-sm-10 col-10 hot-news-title-div">
+                        <a href="#">It is a long established fact that a reader</a>
+                    </div>
+
+                    <div class="col-sm-2 col-2 hot-news-icon-div">
+                        <i class="icon ion-ios-bonfire icon-small"></i>
+                    </div>
+
+                    <div class="col-sm-10 col-10 hot-news-title-div">
+                        <a href="#">It is a long established fact that a reader</a>
+                    </div>
+
+                    <div class="col-sm-2 col-2 hot-news-icon-div">
+                        <i class="icon ion-ios-bonfire icon-small"></i>
+                    </div>
+
+                    <div class="col-sm-10 col-10 hot-news-title-div">
+                        <a href="#">It is a long established fact that a reader</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <h6 class="heading-h6-footer">OPENING TIMES</h6>
+                <ul class="footer-ul-time-sch">
+                    <li class="clearfix">
+                        <span>Saturday</span>
+                        <span>07:00 - 19:00</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>Sunday</span>
+                        <span>07:00 - 19:00</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>Monday</span>
+                        <span>07:00 - 19:00</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>Tuesday</span>
+                        <span>07:00 - 19:00</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>Wednesday</span>
+                        <span>07:00 - 19:00</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>Thursday</span>
+                        <span>07:00 - 19:00</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>Friday</span>
+                        <span>07:00 - 19:00</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <h6 class="heading-h6-footer">Newsletter</h6>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="newsletter-text">For get the news </span>
+                        @using (Html.BeginForm("NEWSLETTER", "Home", FormMethod.Post, new { @class = "form" }))
+                        {
+                            <div class="row">
+                                <div class="col-sm-10 col-10 newsletter-email">
+                                    @Html.TextBox("email","", new { @class = "form-control", placeholder = "Enter a valid email" })
+
+                                </div>
+                                <div class="col-sm-2 col-2">
+                                    <button class="btn btn-footer-mail" type="submit">
+                                        <i class="icon ion-ios-send"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="col-sm-12">
+                        <h6 class="heading-h6-footer mt-3">Our Social Links</h6>
+                        <ul class="footer-ul-social">
+                            <li>
+                                <a href="#"><i class="icon ion-logo-facebook"></i></a>
+                                <a href="#"><i class="icon ion-logo-twitter"></i></a>
+                                <a href="#"><i class="icon ion-logo-googleplus"></i></a>
+                                <a href="#"><i class="icon ion-logo-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <p class="copyright">Copyright &copy; 2018 by FITNESS CLUB. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>

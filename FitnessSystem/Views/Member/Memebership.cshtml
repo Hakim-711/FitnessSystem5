@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+    Layout = "/Views/Shared/_LayoutInnerPages.cshtml";
+
+}
+
+
+<section class="section-membership">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="heading-h2">OUR MEMBERSHIPS</h2>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 box-mem">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title mem-title">Diamond Membership </h3>
+                        <p class="plan-price">300$<span> / year</span></p>
+                        <p class="plan-price-mem">That's only for the beast</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>Unlimited access to the gym</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>7 classes per week</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>One Year memberships</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>FREE drinking package</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>7 Free personal training</span>
+                        </li>
+                    </ul>
+                    <div class="sign-up-pre">
+                        <a asp-action="Register" asp-controller="Member"><span>Sign up now</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-4 box-mem">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title mem-title">Gold Membership </h3>
+                        <p class="plan-price">200$<span> / year</span></p>
+                        <p class="plan-price-mem">That's only for fitness lovers</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>Unlimited access to the gym</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>5 classes per week</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>One Year memberships</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>FREE drinking package</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>2 Free personal training</span>
+                        </li>
+                    </ul>
+                    <div class="sign-up-nor">
+                        <a asp-action="Create" asp-controller="Registers"><span>Sign up now</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-4 box-mem">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title mem-title">Silver Membership </h3>
+                        <p class="plan-price">100$<span> / year</span></p>
+                        <p class="plan-price-mem">That's only for the newbie</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>Unlimited access to the gym</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>3 classes per week</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>One Year memberships</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>FREE drinking package</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="icon ion-ios-arrow-round-forward icon-small"></i><span>1 Free personal training</span>
+                        </li>
+                    </ul>
+                    <div class="sign-up-nor">
+                        <a asp-action="Create" asp-controller="Registers"><span>Sign up now</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

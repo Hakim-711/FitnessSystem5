@@ -1,0 +1,165 @@
+﻿@using FitnessSystem.Models
+@model Register
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LayoutInnerPages.cshtml";
+}
+@{
+    // Prepare a list of SelectListItem objects for the dropdown
+    List<SelectListItem> planOptions = new List<SelectListItem>
+    {
+        new SelectListItem { Text = "Diamond Membership", Value = "DM" },
+        new SelectListItem { Text = "Gold Membership", Value = "GM" },
+        new SelectListItem { Text = "Silver Membership", Value = "SM" },
+        new SelectListItem { Text = "Other Membership Plan", Value = "OM" },
+    };
+
+    // Create a SelectList object from the list of SelectListItem objects
+    SelectList planSelectList = new SelectList(planOptions, "Value", "Text");
+}
+@section Scripts {
+    <script>
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById("@Html.IdFor(m => m.CurrentWeight)").value);
+            const height = parseFloat(document.getElementById("@Html.IdFor(m => m.Height)").value);
+
+            if (weight && height) {
+                const bmi = (weight / Math.pow(height / 100, 2)).toFixed(1);
+                document.getElementById("@Html.IdFor(m => m.BMI)").value = bmi;
+            } else {
+                document.getElementById("@Html.IdFor(m => m.BMI)").value = "";
+            }
+        }
+    </script>
+}
+
+
+<section class="section-reg-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="heading-h2">JOIN OUR FAMILY - Apply today </h2>
+            </div>
+            <div class="col-sm-9 mx-auto">
+                <div class="card">
+                    <div class="card-body form-box">
+                        @using (Html.BeginForm("Register", "Member", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FirstName, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control form-control-sm", placeholder = "Enter First Name" })
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.LastName, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control form-control-sm", placeholder = "Enter Last Name" })
+                                <span asp-validation-for="LastName" class="text-danger"></span>
+
+                            </div>
+
+                            <div class="form-group">
+                                <select asp-for="Gender" asp-items="new SelectList(ViewBag.Genders, nameof(LK_Gender.Id), nameof(LK_Gender.description))">
+                                    <option value="">Select a gender...</option>
+                                </select>
+                                <!-- Repeat this for countries and plans... -->
+
+                                <span asp-validation-for="GenderID" class="text-danger"></span>
+                            </div>
+
+                           
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.CurrentWeight, new { @class = "col-form-label-sm" })
+                            @Html.TextBoxFor(m => m.CurrentWeight, new { @class = "form-control form-control-sm", placeholder = "Your current weight", id = "currentWeight", oninput = "calculateBMI()" })
+                            <span asp-validation-for="CurrentWeight" class="text-danger"></span>
+                        </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Height, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.Height, new { @class = "form-control form-control-sm", placeholder = "Height", id = "height", oninput = "calculateBMI()" })
+                                <span asp-validation-for="Height" class="text-danger"></span>
+                            </div>
+                            
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.DesiredWeight, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.DesiredWeight, new { @class = "form-control form-control-sm", placeholder = "Your desired weight" })
+                                <span asp-validation-for="DesiredWeight" class="text-danger"></span>
+                            </div>
+
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.BMI, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.BMI, new { @class = "form-control form-control-sm", placeholder = "BMI" })
+                                <span asp-validation-for="BMI" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.HomeAddress, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.HomeAddress, new { @class = "form-control form-control-sm", placeholder = "Street Address" })
+                                <span asp-validation-for="HomeAddress" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.City, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.City, new { @class = "form-control form-control-sm", placeholder = "City" })
+                                <span asp-validation-for="City" class="text-danger"></span>
+                            </div>
+
+
+
+
+                            <div class="form-group">
+                                <select asp-for="CountryNavigation" asp-items="@(new SelectList(ViewBag.Countries, nameof(LK_countries.countru_id), nameof(LK_countries.country_name)))">
+                                    <option value="">Select a country...</option>
+                                </select>
+                                <!-- Repeat this for countries and plans... -->
+                                <span asp-validation-for="Country" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Email, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control form-control-sm", placeholder = "Enter email" })
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Phone, new { @class = "col-form-label-sm" })
+                                @Html.TextBoxFor(m => m.Phone, new { @class = "form-control form-control-sm", placeholder = "Phone no" })
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <select asp-for="PlanNavigation" asp-items="@new SelectList(ViewBag.Plans, nameof(LK_Plan.Id), nameof(LK_Plan.name_plan))">
+                                    <option value="">Select a plan...</option>
+                                </select> <span asp-validation-for="Plan" class="text-danger"></span>
+                            </div>
+
+
+
+                            <!-- Add the remaining form fields using the same pattern -->
+
+                            <div class="form-group form-check">
+                                @Html.CheckBoxFor(m => m.Agree, new { @class = "form-check-input" })
+                                @Html.LabelFor(m => m.Agree, new { @class = "form-check-label check-lbl" })
+                                <span asp-validation-for="Agree" class="text-danger"></span>
+
+                            </div>
+
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                <button type="submit" class=" main-button btn btn-block n" name="btn" value="submit">
+                                    <span>JOIN NOW</span>
+                                </button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

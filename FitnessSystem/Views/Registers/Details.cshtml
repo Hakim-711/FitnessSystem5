@@ -1,0 +1,39 @@
+﻿@model FitnessSystem.Models.Register
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h5>@Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Current Weight: </strong>@Html.DisplayFor(model => model.CurrentWeight)</p>
+                <p><strong>Desired Weight: </strong>@Html.DisplayFor(model => model.DesiredWeight)</p>
+                <p><strong>Height: </strong>@Html.DisplayFor(model => model.Height)</p>
+                <p><strong>BMI: </strong>@Html.DisplayFor(model => model.BMI)</p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Address: </strong>@Html.DisplayFor(model => model.HomeAddress), @Html.DisplayFor(model => model.City), @Html.DisplayFor(model => model.Code)</p>
+                <p><strong>Email: </strong>@Html.DisplayFor(model => model.Email)</p>
+                <p><strong>Phone: </strong>@Html.DisplayFor(model => model.Phone)</p>
+                <p><strong>Agreement: </strong>@Html.DisplayFor(model => model.Agree)</p>
+                <p><strong>Gender: </strong>@Html.DisplayFor(model => model.Gender.description)</p>
+                <p><strong>Country: </strong>@Html.DisplayFor(model => model.CountryNavigation.countru_id)</p>
+                <p><strong>Plan: </strong>@Html.DisplayFor(model => model.PlanNavigation.name_plan)</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-center">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning text-white mx-1">
+            <i class="bi bi-pencil-square"></i> Edit
+        </a>
+        <a asp-action="Index" class="btn btn-secondary mx-1">Back to List</a>
+    </div>
+</div>

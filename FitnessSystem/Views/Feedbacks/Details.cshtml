@@ -1,0 +1,37 @@
+﻿@model FitnessSystem.Models.Feedback
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Feedback</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Likelihood)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Likelihood)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
